@@ -1,4 +1,4 @@
-package com.sth876.ecommerce.com.sth876.ecommerce.ntity;
+package com.sth876.ecommerce.entity;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;

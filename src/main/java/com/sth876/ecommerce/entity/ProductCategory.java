@@ -22,7 +22,7 @@ public class ProductCategory {
     private String categoryName;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
-    private Set<com.sth876.ecommerce.com.sth876.ecommerce.ntity.Product> products;
+    private Set<Product> products;
 
 
 }

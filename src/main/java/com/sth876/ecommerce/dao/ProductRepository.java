@@ -1,7 +1,7 @@
 package com.sth876.ecommerce.dao;
 
 
-import com.sth876.ecommerce.com.sth876.ecommerce.ntity.Product;
+import com.sth876.ecommerce.entity.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
