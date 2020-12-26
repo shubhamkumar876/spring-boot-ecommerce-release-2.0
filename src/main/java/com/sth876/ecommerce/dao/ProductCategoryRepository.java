@@ -1,0 +1,11 @@
+package com.sth876.ecommerce.dao;
+
+import com.sth876.ecommerce.com.sth876.ecommerce.ntity.ProductCategory;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+@CrossOrigin
+@RepositoryRestResource(collectionResourceRel = "productcategory", path = "product-category")
+public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Long> {
+}
