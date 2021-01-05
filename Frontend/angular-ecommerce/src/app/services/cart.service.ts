@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 import { CartItem } from '../common/cart-item';
 import { Product } from '../common/product';
 
@@ -12,6 +12,12 @@ export class CartService {
 
   totalPrice: Subject<number> = new Subject<number>();
   totalQuantity: Subject<number> = new Subject<number>();
+
+
+  // below code to store the last state of the variables so that it is available for 
+  //instances created after these events buut not req when using sessionMemory
+  // totalPrice: Subject<number> = new BehaviorSubject<number>(0);
+  // totalQuantity: Subject<number> = new BehaviorSubject<number>(0);
 
   constructor() { 
     this.cartItems = JSON.parse(sessionStorage.getItem('cartItems')!) != null ? JSON.parse(sessionStorage.getItem('cartItems')!):[];
