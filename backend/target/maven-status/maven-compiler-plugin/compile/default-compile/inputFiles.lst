@@ -1,6 +1,6 @@
-D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\src\main\java\com\sth876\ecommerce\config\MydataRestConfig.java
-D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\src\main\java\com\sth876\ecommerce\entity\Product.java
-D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\src\main\java\com\sth876\ecommerce\dao\ProductCategoryRepository.java
-D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\src\main\java\com\sth876\ecommerce\entity\ProductCategory.java
-D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\src\main\java\com\sth876\ecommerce\dao\ProductRepository.java
-D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\src\main\java\com\sth876\ecommerce\SpringBootEcommerceApplication.java
+D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\backend\src\main\java\com\sth876\ecommerce\dao\ProductCategoryRepository.java
+D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\backend\src\main\java\com\sth876\ecommerce\SpringBootEcommerceApplication.java
+D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\backend\src\main\java\com\sth876\ecommerce\config\MydataRestConfig.java
+D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\backend\src\main\java\com\sth876\ecommerce\entity\ProductCategory.java
+D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\backend\src\main\java\com\sth876\ecommerce\dao\ProductRepository.java
+D:\javaprograms\Angular-spring-boot\Ecommerce\02-backend\spring-boot-ecommerce\backend\src\main\java\com\sth876\ecommerce\entity\Product.java
