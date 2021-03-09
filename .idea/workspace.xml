@@ -8,15 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec8210c-40b9-4799-957d-1c3d69aea188" name="Default Changelist" comment="completed till checkout page.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/dao/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/dao/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/dto/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/dto/Purchase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/service/CheckoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/service/CheckoutService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/service/CheckoutServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sth876/ecommerce/service/CheckoutServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="5ec8210c-40b9-4799-957d-1c3d69aea188" name="Default Changelist" comment="completed till checkout page." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609924971117</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Email repetation in customer table fixed!">
+      <created>1615280098964</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615280098964</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +282,8 @@
     <MESSAGE value="completed till checkout page." />
     <MESSAGE value="API support for order save." />
     <MESSAGE value="checkout button , order save and fetching Order tracking number." />
-    <option name="LAST_COMMIT_MESSAGE" value="checkout button , order save and fetching Order tracking number." />
+    <MESSAGE value="Email repetation in customer table fixed!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Email repetation in customer table fixed!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="435" y="187" key="#Notifications" timestamp="1608976476006">
@@ -346,10 +346,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1609064627952" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1609925053035">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1615280134042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609925053035" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1615280134042" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608976359387">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
