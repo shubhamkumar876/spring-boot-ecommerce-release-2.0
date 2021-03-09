@@ -28,7 +28,7 @@ public class Customer {
     private String email;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
-    private Set<Order> orders = new HashSet<>();
+    public Set<Order> orders = new HashSet<>();
 
 
     public void add(Order order) {

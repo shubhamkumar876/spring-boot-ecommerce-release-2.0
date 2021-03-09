@@ -1,5 +1,7 @@
 package com.sth876.ecommerce.entity;
 
+import com.sth876.ecommerce.entity.*;
+
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
