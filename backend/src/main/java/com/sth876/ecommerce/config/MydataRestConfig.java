@@ -1,12 +1,13 @@
 package com.sth876.ecommerce.config;
 
-import com.sth876.ecommerce.entity.Country;
-import com.sth876.ecommerce.entity.State;
+import com.sth876.ecommerce.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.http.HttpMethod;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 import javax.persistence.EntityManager;
 import javax.persistence.metamodel.EntityType;
@@ -14,11 +15,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import com.sth876.ecommerce.entity.ProductCategory;
-import com.sth876.ecommerce.entity.Product;
-
 @Configuration
 public class MydataRestConfig implements RepositoryRestConfigurer {
+
+    @Value("${allowed.origins}")
+    private String[] theAllowedOrigins;
 
     private EntityManager entityManager;
 
@@ -28,24 +29,34 @@ public class MydataRestConfig implements RepositoryRestConfigurer {
     }
 
     @Override
-    public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
+    public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config,
+                                                     CorsRegistry cors) {
 
-        HttpMethod[] theUnSupportedActions = {HttpMethod.PUT,HttpMethod.POST,HttpMethod.DELETE};
+        HttpMethod[] theUnSupportedActions = {HttpMethod.PUT,HttpMethod.POST,HttpMethod.DELETE
+                                                ,HttpMethod.PATCH};
 
-        //disable HTTP methods for product: PUT, POST and DELETE
+        //disable HTTP methods for product: PUT, POST, PATCH and DELETE
         disableHttpMethods(Product.class,config, theUnSupportedActions);
 
-        //disable HTTP methods for ProductCategory: PUT, POST and DELETE
+        //disable HTTP methods for ProductCategory: PUT, POST, PATCH and DELETE
         disableHttpMethods(ProductCategory.class,config, theUnSupportedActions);
 
-        //disable HTTP methods for Country: PUT, POST and DELETE
+        //disable HTTP methods for Country: PUT, POST, PATCH and DELETE
         disableHttpMethods(Country.class,config, theUnSupportedActions);
 
-        //disable HTTP methods for State: PUT, POST and DELETE
+        //disable HTTP methods for State: PUT, POST, PATCH and DELETE
         disableHttpMethods(State.class,config, theUnSupportedActions);
+
+        //disable HTTP methods for Order: PUT, POST, PATCH and DELETE
+        disableHttpMethods(Order.class,config, theUnSupportedActions);
 
         //call an internal helper method to expose the id's
         exposeIds(config);
+
+        // configure cors mapping
+        //cors.addMapping(config.getBasePath() + "/**").allowedOriginPatterns(theAllowedOrigins);
+        //for all cross origin requests
+        cors.addMapping("/**");
     }
 
     private void disableHttpMethods(Class theClass, RepositoryRestConfiguration config, HttpMethod[] theUnSupportedActions) {
